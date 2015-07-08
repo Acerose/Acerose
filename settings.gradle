@@ -1,0 +1,10 @@
+/*
+example subproject inclusion. this is for me derpers. @not2excel
+
+    include ':core'
+    project(':core').projectDir = "$rootDir/core" as File
+ */
+
+rootProject.name = 'acerose'
+rootProject.name = 'Acerose'
+

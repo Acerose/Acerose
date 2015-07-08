@@ -1,0 +1,37 @@
+allprojects {
+    group 'org.acerose'
+    version '1.0-SNAPSHOT'
+
+    apply plugin: 'idea'
+}
+
+/*
+subproject example build.gradle. this is for me derpers. @not2excel
+
+    description = ''
+    configurations { providedCompile }
+
+    sourceSets.main.compileClasspath += configurations.providedCompile
+    sourceSets.test.compileClasspath += configurations.providedCompile
+    sourceSets.test.runtimeClasspath += configurations.providedCompile
+
+    dependencies {
+        providedCompile project(':core')
+    }
+ */
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'scala'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        testCompile group: 'junit', name: 'junit', version: '4.11'
+    }
+}

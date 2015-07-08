@@ -1,0 +1,18 @@
+# Directories
+
+**/.gradle/*
+**/.idea/*
+**/build/*
+**/target/*
+**/out/*
+
+# Generated files
+
+*.class
+*.iml
+*.ipr
+*.iws
+dependency-reduced-pom.xml
+
+# Unneeded files
+
